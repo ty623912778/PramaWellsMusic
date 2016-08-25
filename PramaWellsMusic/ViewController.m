@@ -18,6 +18,7 @@
 #import "OpenSearchController.h"
 
 
+
 @interface ViewController ()<SwipeViewDataSource, SwipeViewDelegate>
 @property (weak, nonatomic) IBOutlet SwipeView *swipeView;
 @property (weak, nonatomic) IBOutlet UIView *moveView;

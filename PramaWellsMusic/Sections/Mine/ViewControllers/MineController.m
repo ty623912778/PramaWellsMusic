@@ -14,9 +14,12 @@
 #import "MBProgressHUD.h"
 #import "UIImageView+WebCache.h"
 #import "CleanCaches.h"
-
+//mv
 #import "MVViewController.h"
 #import "TabBarViewController.h"
+
+//login
+#import "LoginViewController.h"
 
 @interface MineController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -35,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataImage = [NSMutableArray arrayWithObjects:@"", @"icon_posted@2x",@"icon_icommentd@2x", @"icon_nightmode@2x", @"icon_posted@2x",  @"icon_myfriends@2x", nil];
-    self.dataName = [NSMutableArray arrayWithObjects: @"", @"最近播放", @"我的喜爱", @"清除缓存", @"MV", @"分享", nil];
+    self.dataName = [NSMutableArray arrayWithObjects: @"", @"最近播放", @"我的喜爱", @"清除缓存", @"MV", @"登陆", nil];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.tableFooterView =  [[UIView alloc] init];
@@ -89,7 +92,9 @@
         [self.navigation pushViewController:VideoTab animated:YES];
         
     } else if (indexPath.row == 5) {
+        LoginViewController *loginVc = [[LoginViewController alloc] init];
         
+        [self.navigation pushViewController:loginVc animated:YES];
     }
     
 }

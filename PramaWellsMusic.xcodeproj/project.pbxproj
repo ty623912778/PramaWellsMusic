@@ -223,6 +223,13 @@
 		04EB4C6B1D6EE07A0040D183 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EB4C4C1D6EE07A0040D183 /* VideoCell.xib */; };
 		04EB4C6C1D6EE07A0040D183 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C4F1D6EE07A0040D183 /* NSObject+YYModel.m */; };
 		04EB4C6D1D6EE07A0040D183 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C511D6EE07A0040D183 /* YYClassInfo.m */; };
+		04EB4C8A1D6F24DE0040D183 /* ForgotPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C811D6F24DE0040D183 /* ForgotPassWordViewController.m */; };
+		04EB4C8B1D6F24DE0040D183 /* GetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C831D6F24DE0040D183 /* GetPassWordViewController.m */; };
+		04EB4C8C1D6F24DE0040D183 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C851D6F24DE0040D183 /* UITextField+Shake.m */; };
+		04EB4C8F1D6F270E0040D183 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C8E1D6F270E0040D183 /* LoginViewController.m */; };
+		04EB4C921D6F278E0040D183 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C911D6F278E0040D183 /* RegisterViewController.m */; };
+		04EB4C951D6F27F70040D183 /* RegisterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C941D6F27F70040D183 /* RegisterTwoViewController.m */; };
+		04EB4C981D6F28470040D183 /* RegisterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4C971D6F28470040D183 /* RegisterThreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -593,6 +600,20 @@
 		04EB4C501D6EE07A0040D183 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		04EB4C511D6EE07A0040D183 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		04EB4C521D6EE07A0040D183 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		04EB4C801D6F24DE0040D183 /* ForgotPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPassWordViewController.h; sourceTree = "<group>"; };
+		04EB4C811D6F24DE0040D183 /* ForgotPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPassWordViewController.m; sourceTree = "<group>"; };
+		04EB4C821D6F24DE0040D183 /* GetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassWordViewController.h; sourceTree = "<group>"; };
+		04EB4C831D6F24DE0040D183 /* GetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassWordViewController.m; sourceTree = "<group>"; };
+		04EB4C841D6F24DE0040D183 /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
+		04EB4C851D6F24DE0040D183 /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
+		04EB4C8D1D6F270E0040D183 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		04EB4C8E1D6F270E0040D183 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		04EB4C901D6F278E0040D183 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		04EB4C911D6F278E0040D183 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		04EB4C931D6F27F70040D183 /* RegisterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTwoViewController.h; sourceTree = "<group>"; };
+		04EB4C941D6F27F70040D183 /* RegisterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTwoViewController.m; sourceTree = "<group>"; };
+		04EB4C961D6F28470040D183 /* RegisterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterThreeViewController.h; sourceTree = "<group>"; };
+		04EB4C971D6F28470040D183 /* RegisterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -643,6 +664,7 @@
 		04EB47D01D6C9BE30040D183 /* PramaWellsMusic */ = {
 			isa = PBXGroup;
 			children = (
+				04EB4C771D6F24DE0040D183 /* Login */,
 				04EB4C141D6EE0790040D183 /* MV */,
 				04EB4B791D6CA1890040D183 /* Others */,
 				04EB4A101D6C9EEF0040D183 /* General */,
@@ -1353,6 +1375,27 @@
 			path = YYModel;
 			sourceTree = "<group>";
 		};
+		04EB4C771D6F24DE0040D183 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04EB4C801D6F24DE0040D183 /* ForgotPassWordViewController.h */,
+				04EB4C811D6F24DE0040D183 /* ForgotPassWordViewController.m */,
+				04EB4C821D6F24DE0040D183 /* GetPassWordViewController.h */,
+				04EB4C831D6F24DE0040D183 /* GetPassWordViewController.m */,
+				04EB4C841D6F24DE0040D183 /* UITextField+Shake.h */,
+				04EB4C851D6F24DE0040D183 /* UITextField+Shake.m */,
+				04EB4C8D1D6F270E0040D183 /* LoginViewController.h */,
+				04EB4C8E1D6F270E0040D183 /* LoginViewController.m */,
+				04EB4C901D6F278E0040D183 /* RegisterViewController.h */,
+				04EB4C911D6F278E0040D183 /* RegisterViewController.m */,
+				04EB4C931D6F27F70040D183 /* RegisterTwoViewController.h */,
+				04EB4C941D6F27F70040D183 /* RegisterTwoViewController.m */,
+				04EB4C961D6F28470040D183 /* RegisterThreeViewController.h */,
+				04EB4C971D6F28470040D183 /* RegisterThreeViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1622,11 +1665,14 @@
 				04EB4BB51D6CB2680040D183 /* MusicModel.m in Sources */,
 				04EB4BF71D6D8AD60040D183 /* SongTypeCollectionViewCell.m in Sources */,
 				04EB4B161D6C9EEF0040D183 /* SDWebImageManager.m in Sources */,
+				04EB4C8B1D6F24DE0040D183 /* GetPassWordViewController.m in Sources */,
 				04EB4BA01D6CB1010040D183 /* MusicHotViewController.m in Sources */,
 				04EB4BC41D6D89370040D183 /* SingerModel.m in Sources */,
+				04EB4C981D6F28470040D183 /* RegisterThreeViewController.m in Sources */,
 				04EB4C6C1D6EE07A0040D183 /* NSObject+YYModel.m in Sources */,
 				04EB4B011D6C9EEF0040D183 /* MJRefreshHeader.m in Sources */,
 				04EB4B0E1D6C9EEF0040D183 /* UIView+SDExtension.m in Sources */,
+				04EB4C921D6F278E0040D183 /* RegisterViewController.m in Sources */,
 				04EB4BEE1D6D8A510040D183 /* SingerCell.m in Sources */,
 				04EB4B1C1D6C9EEF0040D183 /* UIImageView+HighlightedWebCache.m in Sources */,
 				04EB4B191D6C9EEF0040D183 /* UIImage+GIF.m in Sources */,
@@ -1673,9 +1719,11 @@
 				04EB4AF31D6C9EEF0040D183 /* AFNetworkReachabilityManager.m in Sources */,
 				04EB4B7C1D6CA6640040D183 /* NSTimer+Control.m in Sources */,
 				04EB4BA91D6CB16B0040D183 /* SingleImageCell.m in Sources */,
+				04EB4C8F1D6F270E0040D183 /* LoginViewController.m in Sources */,
 				04EB4C571D6EE07A0040D183 /* MASLayoutConstraint.m in Sources */,
 				04EB4C621D6EE07A0040D183 /* Player.m in Sources */,
 				04EB4C581D6EE07A0040D183 /* MASViewAttribute.m in Sources */,
+				04EB4C8C1D6F24DE0040D183 /* UITextField+Shake.m in Sources */,
 				04EB4B031D6C9EEF0040D183 /* MJRefreshLegendHeader.m in Sources */,
 				04EB4AF71D6C9EEF0040D183 /* AFURLResponseSerialization.m in Sources */,
 				04EB4C531D6EE07A0040D183 /* FunnyViewController.m in Sources */,
@@ -1684,6 +1732,7 @@
 				04EB4C591D6EE07A0040D183 /* MASViewConstraint.m in Sources */,
 				04EB4C681D6EE07A0040D183 /* TabBarViewController.m in Sources */,
 				04EB4BA31D6CB11F0040D183 /* NewCDController.m in Sources */,
+				04EB4C951D6F27F70040D183 /* RegisterTwoViewController.m in Sources */,
 				04EB4C6D1D6EE07A0040D183 /* YYClassInfo.m in Sources */,
 				04EB4B971D6CB0790040D183 /* MineCell.m in Sources */,
 				04EB4AF91D6C9EEF0040D183 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -1693,6 +1742,7 @@
 				04EB4C661D6EE07A0040D183 /* PlayViewBottomView.m in Sources */,
 				04EB4C601D6EE07A0040D183 /* NavigationController.m in Sources */,
 				04EB47D31D6C9BE30040D183 /* main.m in Sources */,
+				04EB4C8A1D6F24DE0040D183 /* ForgotPassWordViewController.m in Sources */,
 				04EB4B091D6C9EEF0040D183 /* TAAnimatedDotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
