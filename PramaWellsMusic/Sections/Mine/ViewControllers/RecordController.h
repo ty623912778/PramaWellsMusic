@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface RecordController : UIViewController
+#import "NavigationView.h"
+@interface RecordController : NavigationView
 @property (nonatomic, strong) UINavigationController *navigation;
 @property (nonatomic, copy) NSString *from;
+
+
+//color
+
+
+@property (nonatomic, copy) NSArray *arrayLeftButtons;
+
+@property (nonatomic, copy) NSArray *arrayRightButtons;
 @end

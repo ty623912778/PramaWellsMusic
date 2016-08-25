@@ -262,6 +262,11 @@
 		04EB4D081D6F34960040D183 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04EB4CF31D6F34950040D183 /* ShareSDK.bundle */; };
 		04EB4D091D6F34960040D183 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EB4CF41D6F34950040D183 /* ShareSDKConnector.framework */; };
 		04EB4D0C1D6F34DA0040D183 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4D0B1D6F34DA0040D183 /* AuthViewController.m */; };
+		04EB4D131D6F44690040D183 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4D121D6F44690040D183 /* NavigationView.m */; };
+		04EB4D161D6F447F0040D183 /* BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB4D151D6F447F0040D183 /* BarButtonItem.m */; };
+		04EB4D1A1D6F45430040D183 /* file_tital_back_but@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EB4D171D6F45430040D183 /* file_tital_back_but@2x.png */; };
+		04EB4D1B1D6F45430040D183 /* mametchi.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EB4D181D6F45430040D183 /* mametchi.png */; };
+		04EB4D1C1D6F45430040D183 /* mametchi2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EB4D191D6F45430040D183 /* mametchi2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -697,6 +702,14 @@
 		04EB4CF41D6F34950040D183 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		04EB4D0A1D6F34DA0040D183 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
 		04EB4D0B1D6F34DA0040D183 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		04EB4D101D6F44390040D183 /* Public.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.pch; sourceTree = "<group>"; };
+		04EB4D111D6F44680040D183 /* NavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
+		04EB4D121D6F44690040D183 /* NavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
+		04EB4D141D6F447F0040D183 /* BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarButtonItem.h; sourceTree = "<group>"; };
+		04EB4D151D6F447F0040D183 /* BarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarButtonItem.m; sourceTree = "<group>"; };
+		04EB4D171D6F45430040D183 /* file_tital_back_but@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file_tital_back_but@2x.png"; sourceTree = "<group>"; };
+		04EB4D181D6F45430040D183 /* mametchi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mametchi.png; sourceTree = "<group>"; };
+		04EB4D191D6F45430040D183 /* mametchi2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mametchi2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -781,6 +794,7 @@
 		04EB47D01D6C9BE30040D183 /* PramaWellsMusic */ = {
 			isa = PBXGroup;
 			children = (
+				04EB4D0D1D6F44180040D183 /* Navigation */,
 				04EB4C771D6F24DE0040D183 /* Login */,
 				04EB4C141D6EE0790040D183 /* MV */,
 				04EB4B791D6CA1890040D183 /* Others */,
@@ -1666,6 +1680,37 @@
 			path = Required;
 			sourceTree = "<group>";
 		};
+		04EB4D0D1D6F44180040D183 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				04EB4D0E1D6F44180040D183 /* Base */,
+				04EB4D0F1D6F44180040D183 /* Controller */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		04EB4D0E1D6F44180040D183 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04EB4D171D6F45430040D183 /* file_tital_back_but@2x.png */,
+				04EB4D181D6F45430040D183 /* mametchi.png */,
+				04EB4D191D6F45430040D183 /* mametchi2.png */,
+				04EB4D101D6F44390040D183 /* Public.pch */,
+				04EB4D111D6F44680040D183 /* NavigationView.h */,
+				04EB4D121D6F44690040D183 /* NavigationView.m */,
+				04EB4D141D6F447F0040D183 /* BarButtonItem.h */,
+				04EB4D151D6F447F0040D183 /* BarButtonItem.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04EB4D0F1D6F44180040D183 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1799,6 +1844,7 @@
 				04EB4B401D6C9EEF0040D183 /* line03.png in Resources */,
 				04EB4B371D6C9EEF0040D183 /* icon_icommentd@2x.png in Resources */,
 				04EB4C671D6EE07A0040D183 /* PlayerTool.bundle in Resources */,
+				04EB4D1C1D6F45430040D183 /* mametchi2.png in Resources */,
 				04EB4B631D6C9EEF0040D183 /* repeat3.png in Resources */,
 				04EB4B321D6C9EEF0040D183 /* effect_env_parking_lot.jpg in Resources */,
 				04EB4B4F1D6C9EEF0040D183 /* 1.png in Resources */,
@@ -1837,6 +1883,7 @@
 				04EB4B2D1D6C9EEF0040D183 /* effect_env_cave.jpg in Resources */,
 				04EB4B561D6C9EEF0040D183 /* line2.png in Resources */,
 				04EB4B5F1D6C9EEF0040D183 /* play.png in Resources */,
+				04EB4D1B1D6F45430040D183 /* mametchi.png in Resources */,
 				04EB4B741D6C9EEF0040D183 /* week.png in Resources */,
 				04EB4B671D6C9EEF0040D183 /* playLine.png in Resources */,
 				04EB4D081D6F34960040D183 /* ShareSDK.bundle in Resources */,
@@ -1855,6 +1902,7 @@
 				04EB4B3E1D6C9EEF0040D183 /* line01.png in Resources */,
 				04EB4B751D6C9EEF0040D183 /* song_list_item_inlove.png in Resources */,
 				04EB4B781D6C9EEF0040D183 /* song_list_item_play.png in Resources */,
+				04EB4D1A1D6F45430040D183 /* file_tital_back_but@2x.png in Resources */,
 				04EB4B611D6C9EEF0040D183 /* repeat1.png in Resources */,
 				04EB4B681D6C9EEF0040D183 /* playlist-pause.png in Resources */,
 				04EB4B291D6C9EEF0040D183 /* content-empty.png in Resources */,
@@ -1982,11 +2030,13 @@
 				04EB4B0A1D6C9EEF0040D183 /* TADotView.m in Sources */,
 				04EB4B1B1D6C9EEF0040D183 /* UIImage+WebP.m in Sources */,
 				04EB4AFC1D6C9EEF0040D183 /* MJRefreshComponent.m in Sources */,
+				04EB4D161D6F447F0040D183 /* BarButtonItem.m in Sources */,
 				04EB4B941D6CB0240040D183 /* RecordController.m in Sources */,
 				04EB4BA61D6CB1570040D183 /* MusicHotCell.m in Sources */,
 				04EB4AF61D6C9EEF0040D183 /* AFURLRequestSerialization.m in Sources */,
 				04EB4C611D6EE07A0040D183 /* ForwardView.m in Sources */,
 				04EB4B171D6C9EEF0040D183 /* SDWebImagePrefetcher.m in Sources */,
+				04EB4D131D6F44690040D183 /* NavigationView.m in Sources */,
 				04EB4C5C1D6EE07A0040D183 /* View+MASAdditions.m in Sources */,
 				04EB4C5E1D6EE07A0040D183 /* MusicViewController.m in Sources */,
 				04EB4B1A1D6C9EEF0040D183 /* UIImage+MultiFormat.m in Sources */,

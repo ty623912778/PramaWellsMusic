@@ -18,6 +18,10 @@
 @property (nonatomic, strong) NSMutableArray *dataSourceArr;
 @property (nonatomic, strong) NSMutableArray *dataEntity;
 
+
+
+
+
 @end
 
 @implementation RecordController
@@ -41,7 +45,39 @@
     self.navigationItem.leftBarButtonItem = leftBack;
     
     [self readRecordData];
+    
+    
+    
+    //color
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.view.backgroundColor = [UIColor orangeColor];
+    
+    
+    [self setNav];
 }
+
+//color
+-(void)setNav {
+    
+    
+    BarButtonItem * btn = [BarButtonItem buttonWithImageNormal:[UIImage imageNamed:@"file_tital_back_but@2x"] imageSelected:[UIImage imageNamed:@"file_tital_back_but@2x"]];
+    [btn addTarget:self action:@selector(BtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    BarButtonItem *btn1 = [BarButtonItem buttonWithImageNormal:[UIImage imageNamed:@"mametchi"] imageSelected:[UIImage imageNamed:@"mametchi"]];
+    self.arrayLeftButtons = @[btn, btn1];
+    self.navigationLeftButtons = self.arrayLeftButtons;
+    
+    BarButtonItem *btn3 = [BarButtonItem buttonWithImageNormal:[UIImage imageNamed:@"mametchi"] imageSelected:[UIImage imageNamed:@"mametchi"]];
+    BarButtonItem *btn4 = [BarButtonItem buttonWithImageNormal:[UIImage imageNamed:@"mametchi2"] imageSelected:[UIImage imageNamed:@"mametchi2"]];
+    self.arrayRightButtons = @[btn3,btn4];
+    self.navigationRightButtons = self.arrayRightButtons;
+}
+
+-(void)BtnClick {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
