@@ -10,7 +10,8 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
-
+//weibo
+#import <ShareSDK/ShareSDK.h>
 
 
 @interface AppDelegate ()
@@ -22,7 +23,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
- 
+    [ShareSDK registerApp:@"13315709dab89"
+          activePlatforms:@[@(SSDKPlatformTypeSinaWeibo),
+                            @(SSDKPlatformTypeInstagram),
+                            @(SSDKPlatformTypePocket)]
+                 onImport:nil
+          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
+              
+              switch (platformType)
+              {
+                  case SSDKPlatformTypeSinaWeibo:
+                      //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
+                      [appInfo SSDKSetupSinaWeiboByAppKey:@"568898243"
+                                                appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3"
+                                              redirectUri:@"http://www.sharesdk.cn"
+                                                 authType:SSDKAuthTypeBoth];
+                      break;
+                  case SSDKPlatformTypeInstagram:
+                      [appInfo SSDKSetupInstagramByClientID:@"ff68e3216b4f4f989121aa1c2962d058"
+                                               clientSecret:@"1b2e82f110264869b3505c3fe34e31a1"
+                                                redirectUri:@"http://sharesdk.cn"];
+                      break;
+                  case SSDKPlatformTypePocket:
+                      [appInfo SSDKSetupPocketByConsumerKey:@"11496-de7c8c5eb25b2c9fcdc2b627"
+                                                redirectUri:@"pocketapp1234"
+                                                   authType:SSDKAuthTypeBoth];
+                      break;
+                  default:
+                      break;
+              }
+          }];
 
         return YES;
 }

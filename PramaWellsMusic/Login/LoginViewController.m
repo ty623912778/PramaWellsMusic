@@ -6,8 +6,10 @@
 //  Created by mac on 16/8/25.
 //  Copyright © 2016年 mac. All rights reserved.
 //
-
-
+//weibo
+#import "AuthViewController.h"
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDK/ShareSDK+Base.h>
 
 
 #import "LoginViewController.h"
@@ -232,6 +234,55 @@
 }
 -(void)XinLangBtnClick
 {
+    __weak LoginViewController *theController = self;
+    [ShareSDK authorize:SSDKPlatformTypeSinaWeibo
+               settings:nil
+          onViewDisplay:^(UIView<ISSDKAuthView> *view)
+     {
+         
+         //在此回调中进行授权视图自定义
+         AuthViewController *vc = [[AuthViewController alloc] initWithAuthView:view];
+         UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+         [theController presentModalViewController:nvc animated:YES];
+         
+     }
+         onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error) {
+             
+             switch (state) {
+                 case SSDKResponseStateSuccess:
+                 {
+                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"授权成功"
+                                                                         message:nil
+                                                                        delegate:nil
+                                                               cancelButtonTitle:@"确定"
+                                                               otherButtonTitles:nil];
+                     [alertView show];
+                     break;
+                 }
+                 case SSDKResponseStateFail:
+                 {
+                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"授权失败"
+                                                                         message:[NSString stringWithFormat:@"%@", error]
+                                                                        delegate:nil
+                                                               cancelButtonTitle:@"确定"
+                                                               otherButtonTitles:nil];
+                     [alertView show];
+                     break;
+                 }
+                 case SSDKResponseStateCancel:
+                 {
+                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"授权已取消"
+                                                                         message:nil
+                                                                        delegate:nil
+                                                               cancelButtonTitle:@"确定"
+                                                               otherButtonTitles:nil];
+                     [alertView show];
+                     break;
+                 }
+                 default:
+                     break;
+             }
+         }];
    
 }
 #pragma mark UITextFiledDelegate
