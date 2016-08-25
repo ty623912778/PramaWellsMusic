@@ -1378,6 +1378,7 @@
 		04EB4C771D6F24DE0040D183 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				04EB4C991D6F2BAC0040D183 /* Weibo */,
 				04EB4C801D6F24DE0040D183 /* ForgotPassWordViewController.h */,
 				04EB4C811D6F24DE0040D183 /* ForgotPassWordViewController.m */,
 				04EB4C821D6F24DE0040D183 /* GetPassWordViewController.h */,
@@ -1394,6 +1395,13 @@
 				04EB4C971D6F28470040D183 /* RegisterThreeViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		04EB4C991D6F2BAC0040D183 /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weibo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

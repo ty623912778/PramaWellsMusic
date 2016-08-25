@@ -79,7 +79,8 @@
 //返回按钮点击事件
 -(void)backBtnClick:(UIButton *)button
 {
-    exit(0);
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
 //注册按钮点击事件
 -(void)registerBtnClick
