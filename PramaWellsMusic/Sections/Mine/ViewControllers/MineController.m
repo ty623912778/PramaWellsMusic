@@ -15,6 +15,9 @@
 #import "UIImageView+WebCache.h"
 #import "CleanCaches.h"
 
+#import "MVViewController.h"
+#import "TabBarViewController.h"
+
 @interface MineController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataName;
@@ -80,6 +83,10 @@
         [alert show];
         return;
     } else if (indexPath.row == 4) {
+        
+        TabBarViewController *VideoTab = [[TabBarViewController alloc] init];
+        
+        [self.navigation pushViewController:VideoTab animated:YES];
         
     } else if (indexPath.row == 5) {
         
